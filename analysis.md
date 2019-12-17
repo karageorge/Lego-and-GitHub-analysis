@@ -525,14 +525,14 @@ df_4 = df_commits %>%
   ggplot(data = df_4) + geom_point(aes(x = nchar(message), y = change_in_lines), alpha = 0.25, color = "blue") + labs(x="Length of message",y="Changes in line")+ggtitle("Plot of Change_in_lines and message length")
 ```
 
-![](hw1_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](analysis_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
 
 ``` r
   ggplot(data = df_4 ) + geom_point(aes(x = nchar(message), y = change_in_lines), alpha = 0.25, color = "blue") + 
     scale_y_log10() + scale_x_log10() +labs(x="log(Length of message)",y="log(Changes in line)")+ggtitle("Plot of log(Change_in_lines) and log(message length)")
 ```
 
-![](hw1_files/figure-gfm/unnamed-chunk-17-2.png)<!-- -->
+![](analysis_files/figure-gfm/unnamed-chunk-17-2.png)<!-- -->
 
 5.  Other than Romain Francois, which three contributors have worked on
     the most different files in the repository? In order words, who has
